@@ -479,7 +479,7 @@ export default function App() {
       <section id="contact" style={{ padding:'120px 0', background:'#050709', position:'relative', overflow:'hidden' }}>
         <div style={{ position:'absolute', top:'50%', left:'50%', transform:'translate(-50%,-50%)', width:600, height:300, borderRadius:'50%', background:'rgba(124,58,237,0.06)', filter:'blur(80px)', pointerEvents:'none' }} />
         <div style={{ maxWidth:700, margin:'0 auto', padding:'0 2rem', textAlign:'center', position:'relative', zIndex:1 }}>
-          <span style={{ fontFamily:"'JetBrains Mono', monospace", fontSize:13, color:'#7C3AED', fontWeight:600, letterSpacing:'0.05em' }}>// contact</span>
+          <span style={{ fontFamily:"'JetBrains Mono', monospace", fontSize:13, color:'#7C3AED', fontWeight:600, letterSpacing:'0.05em' }}></span>
           <h2 style={{ fontSize:'clamp(2rem,5vw,3rem)', fontWeight:800, letterSpacing:'-0.03em', marginTop:8, marginBottom:'1rem', color:'#F1F5F9' }}>
             Let's build something
           </h2>
