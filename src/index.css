@@ -1,21 +1,22 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #F9F8F6;
-  --bg-card: #FFFFFF;
-  --text: #111111;
-  --text-muted: #6B7280;
-  --accent: #1B4FD8;
-  --accent-light: #EEF2FF;
-  --accent-dark: #1338B0;
-  --border: #E5E7EB;
-  --green: #059669;
-  --green-bg: #ECFDF5;
-  --terminal-bg: #0F1117;
-  --terminal-text: #E2E8F0;
-  --terminal-green: #4ADE80;
-  --terminal-blue: #60A5FA;
-  --terminal-yellow: #FBBF24;
+  --bg: #080B14;
+  --bg-card: #0D1121;
+  --bg-card-hover: #111827;
+  --text: #F1F5F9;
+  --text-muted: #94A3B8;
+  --text-dim: #64748B;
+  --accent: #7C3AED;
+  --accent-bright: #8B5CF6;
+  --accent-glow: rgba(124,58,237,0.25);
+  --accent-light: rgba(139,92,246,0.1);
+  --border: rgba(255,255,255,0.07);
+  --border-accent: rgba(139,92,246,0.4);
+  --green: #10B981;
+  --green-bg: rgba(16,185,129,0.1);
+  --pink: #EC4899;
+  --cyan: #06B6D4;
 }
 
 html { scroll-behavior: smooth; }
@@ -27,21 +28,24 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Space Grotesk', sans-serif;
-  line-height: 1.2;
-}
-
+h1,h2,h3,h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.2; }
 a { color: inherit; text-decoration: none; }
-
-::selection { background: var(--accent-light); color: var(--accent); }
-
-::-webkit-scrollbar { width: 6px; }
+button { cursor: pointer; font-family: inherit; }
+::selection { background: var(--accent); color: #fff; }
+::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.95)} }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+@keyframes glow { 0%,100%{opacity:0.5} 50%{opacity:1} }
+@keyframes slideUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  *,*::before,*::after { animation-duration:0.01ms!important; transition-duration:0.01ms!important; }
 }
