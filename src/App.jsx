@@ -304,7 +304,7 @@ function Nav() {
     }}>
       <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 2rem', height:64, display:'flex', alignItems:'center', justifyContent:'space-between' }}>
         <span style={{ fontFamily:"'Space Grotesk', sans-serif", fontWeight:700, fontSize:'1.1rem', letterSpacing:'-0.02em' }}>
-          Bisma<span style={{ color:'#7C3AED' }}>.</span>
+          Bisma Nawaz<span style={{ color:'#7C3AED' }}>.</span>
         </span>
         <div style={{ display:'flex', gap:'2rem', alignItems:'center' }}>
           {['Projects','Skills','Experience','About','Contact'].map(l => (
@@ -345,7 +345,7 @@ export default function App() {
         <div ref={heroRef} style={{ maxWidth:1100, margin:'0 auto', padding:'120px 2rem 80px', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'5rem', alignItems:'center', position:'relative', zIndex:1, width:'100%' }}>
           <div style={{ opacity: heroIn ? 1 : 0, transform: heroIn ? 'none' : 'translateY(24px)', transition:'all 0.7s ease' }}>
             <div style={{ display:'inline-flex', alignItems:'center', gap:8, background:'rgba(16,185,129,0.1)', color:'#10B981', fontSize:13, fontWeight:600, padding:'5px 14px', borderRadius:20, border:'1px solid rgba(16,185,129,0.25)', marginBottom:'1.5rem' }}>
-              <GlowDot color="#10B981" /> Open to remote UK / US roles
+              {/* <GlowDot color="#10B981" /> Open to remote UK / US roles */}
             </div>
             <h1 style={{ fontSize:'clamp(2.4rem,5vw,3.6rem)', fontWeight:800, letterSpacing:'-0.03em', lineHeight:1.08, marginBottom:'1.25rem', color:'#F1F5F9' }}>
               AI systems<br />
@@ -392,7 +392,7 @@ export default function App() {
       {/* PROJECTS */}
       <section id="projects" style={{ padding:'100px 0', background:'#050709' }}>
         <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 2rem' }}>
-          <SectionHeader eyebrow="// portfolio" title="Projects" subtitle="Six production systems — from LLM APIs to voice chatbots and automation pipelines." />
+          <SectionHeader eyebrow="" title="Projects" subtitle="Six production systems — from LLM APIs to voice chatbots and automation pipelines." />
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(340px, 1fr))', gap:'1.25rem' }}>
             {PROJECTS.map((p, i) => <ProjectCard key={p.title} project={p} index={i} />)}
           </div>
@@ -402,7 +402,7 @@ export default function App() {
       {/* SKILLS */}
       <section id="skills" style={{ padding:'100px 0' }}>
         <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 2rem' }}>
-          <SectionHeader eyebrow="// stack" title="Skills" subtitle="What I actually use, day to day." />
+          <SectionHeader eyebrow="" title="Skills" subtitle="What I actually use, day to day." />
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(240px, 1fr))', gap:'1.25rem' }}>
             {SKILLS.map(({ category, color, items }) => (
               <div key={category} style={{ background:'#080E1A', borderRadius:12, padding:'1.5rem', border:'1px solid rgba(255,255,255,0.06)', transition:'border-color 0.3s' }}
@@ -427,7 +427,7 @@ export default function App() {
       {/* EXPERIENCE */}
       <section id="experience" style={{ padding:'100px 0', background:'#050709' }}>
         <div style={{ maxWidth:900, margin:'0 auto', padding:'0 2rem' }}>
-          <SectionHeader eyebrow="// history" title="Experience" />
+          <SectionHeader eyebrow="" title="Experience" />
           <div style={{ position:'relative' }}>
             <div style={{ position:'absolute', left:0, top:0, bottom:0, width:1, background:'linear-gradient(to bottom, #7C3AED, transparent)' }} />
             {EXPERIENCE.map((exp, i) => (
@@ -450,9 +450,9 @@ export default function App() {
       {/* ABOUT */}
       <section id="about" style={{ padding:'100px 0' }}>
         <div style={{ maxWidth:700, margin:'0 auto', padding:'0 2rem', textAlign:'center' }}>
-          <SectionHeader eyebrow="// about" title="A bit about me" />
+          <SectionHeader eyebrow="" title="A bit about me" />
           <p style={{ color:'#64748B', fontSize:'1.05rem', lineHeight:1.8, marginBottom:'1.25rem' }}>
-            I'm a Backend Developer and AI Automation Engineer based in Lahore, Pakistan. Over the past two years I've built intelligent automation systems — from n8n pipelines and LLM-powered workflows to production REST APIs — across four roles, including leading an automation team remotely for a UAE-based company.
+            I'm a Backend Developer and AI Automation Engineer based in Lahore, Pakistan. Over the past two years I've built intelligent automation systems from n8n pipelines and LLM-powered workflows to production REST APIs across four roles, including leading an automation team remotely for a UAE-based company.
           </p>
           <p style={{ color:'#64748B', fontSize:'1.05rem', lineHeight:1.8, marginBottom:'2.5rem' }}>
             I'm currently building my cloud infrastructure skills (Docker, CI/CD) and expanding into RAG-based AI applications. I'm looking for remote roles with UK and US companies where I can work on meaningful AI-powered products at a senior level.
@@ -483,9 +483,9 @@ export default function App() {
           <h2 style={{ fontSize:'clamp(2rem,5vw,3rem)', fontWeight:800, letterSpacing:'-0.03em', marginTop:8, marginBottom:'1rem', color:'#F1F5F9' }}>
             Let's build something
           </h2>
-          <p style={{ color:'#64748B', fontSize:'1.05rem', lineHeight:1.7, marginBottom:'2.5rem' }}>
+          {/* <p style={{ color:'#64748B', fontSize:'1.05rem', lineHeight:1.7, marginBottom:'2.5rem' }}>
             Open to remote AI Automation and LLM Engineering roles with UK and US companies. Drop me a line.
-          </p>
+          </p> */}
           <a href="mailto:bismanawaz043@gmail.com" style={{
             display:'inline-block', padding:'16px 36px',
             background:'linear-gradient(135deg, #7C3AED, #5B21B6)',
