@@ -344,9 +344,6 @@ export default function App() {
         <GridBg />
         <div ref={heroRef} style={{ maxWidth:1100, margin:'0 auto', padding:'120px 2rem 80px', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'5rem', alignItems:'center', position:'relative', zIndex:1, width:'100%' }}>
           <div style={{ opacity: heroIn ? 1 : 0, transform: heroIn ? 'none' : 'translateY(24px)', transition:'all 0.7s ease' }}>
-            <div style={{ display:'inline-flex', alignItems:'center', gap:8, background:'rgba(16,185,129,0.1)', color:'#10B981', fontSize:13, fontWeight:600, padding:'5px 14px', borderRadius:20, border:'1px solid rgba(16,185,129,0.25)', marginBottom:'1.5rem' }}>
-              {/* <GlowDot color="#10B981" /> Open to remote UK / US roles */}
-            </div>
             <h1 style={{ fontSize:'clamp(2.4rem,5vw,3.6rem)', fontWeight:800, letterSpacing:'-0.03em', lineHeight:1.08, marginBottom:'1.25rem', color:'#F1F5F9' }}>
               AI systems<br />
               <span style={{ background:'linear-gradient(135deg, #7C3AED, #06B6D4)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text' }}>
