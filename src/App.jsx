@@ -13,13 +13,13 @@ const PROJECTS = [
   {
     tag: 'API · RAG', title: 'Document Q&A RAG API',
     description: 'Upload any PDF and ask natural language questions. LangChain retrieves the most relevant chunks from ChromaDB, Claude generates answers with page-level source citations.',
-    fullDescription: 'A complete Retrieval-Augmented Generation pipeline built from scratch. PDFs are ingested, chunked using RecursiveCharacterTextSplitter, embedded with HuggingFace sentence transformers (all-MiniLM-L6-v2), and stored in ChromaDB. On each question, the top-4 semantically similar chunks are retrieved and passed to Claude API with a structured prompt — returning accurate answers with page-level source traceability.',
+    fullDescription: 'A complete Retrieval-Augmented Generation pipeline built from scratch. PDFs are ingested, chunked using RecursiveCharacterTextSplitter, embedded with HuggingFace sentence transformers (all-MiniLM-L6-v2), and stored in ChromaDB. On each question, the top-4 semantically similar chunks are retrieved and passed to Claude API with a structured prompt returning accurate answers with page-level source traceability.',
     tech: ['LangChain', 'ChromaDB', 'Claude API', 'FastAPI', 'Docker', 'HuggingFace', 'Python'],
     live: 'https://bisma225-document-qa-api.hf.space/docs', code: 'https://github.com/BismaNwaz/document-qa-api', accent: '#7C3AED',
   },
   {
     tag: 'API · LLM', title: 'AI Lead Enrichment API',
-    description: 'Submit a company URL, get back structured lead data — industry, summary, products, and decision-maker titles — extracted by Claude from the live website.',
+    description: 'Submit a company URL, get back structured lead data industry, summary, products, and decision-maker titles extracted by Claude from the live website.',
     fullDescription: 'A production-grade lead intelligence service. Given a company URL, the API scrapes using BeautifulSoup, sends content to Claude API with a structured extraction prompt, and returns clean JSON: industry, company summary, products list, decision-maker titles, and contact info. SQLite caching prevents redundant LLM calls. Containerized with Docker, deployed with GitHub Actions CI/CD.',
     tech: ['FastAPI', 'Claude API', 'BeautifulSoup', 'Docker', 'SQLite', 'GitHub Actions', 'Python'],
     live: 'https://bisma225-lead-enrichment-api.hf.space/docs', code: 'https://github.com/BismaNwaz/lead-enrichment-api', accent: '#06B6D4',
@@ -32,29 +32,29 @@ const PROJECTS = [
   },
   {
     tag: 'Automation · AI', title: 'AI Video Generation Pipeline',
-    description: 'Fully automated marketing video creator — scrapes website content, processes it with NLP, then feeds structured descriptions into an AI video generation platform.',
+    description: 'Fully automated marketing video creator scrapes website content, processes it with NLP, then feeds structured descriptions into an AI video generation platform.',
     fullDescription: 'A zero-touch marketing automation pipeline. The workflow scrapes campaign content from company websites, processes it using NLP to extract key messages, then structures and feeds the output into an AI video generation platform. Result: ready-to-publish promotional videos generated without any manual input.',
     tech: ['Python', 'n8n', 'NLP', 'Web Scraping', 'AI Video API'], accent: '#EC4899',
   },
   {
     tag: 'Voice AI · Deployed', title: 'AI Voice Chatbot — MoltyFoam',
     description: 'Production voice-enabled AI chatbot deployed at MoltyFoam. Customers get instant voice assistance for queries and product guidance via speech recognition and TTS.',
-    fullDescription: 'A production-deployed voice AI system built with Python and enhanced with Chainlit. Deployed at MoltyFoam Pakistan handling real customer interactions — processing spoken queries via speech recognition, generating AI-driven responses, and delivering them via text-to-speech. Also served as voice module for Adovvy\'s customer service AI, demonstrated live at a conference.',
+    fullDescription: 'A production-deployed voice AI system built with Python and enhanced with Chainlit. Deployed at MoltyFoam Pakistan handling real customer interactions processing spoken queries via speech recognition, generating AI-driven responses, and delivering them via text-to-speech. Also served as voice module for Adovvy\'s customer service AI, demonstrated live at a conference.',
     tech: ['Python', 'Chainlit', 'Speech Recognition', 'TTS', 'LLM Integration'], accent: '#F59E0B',
   },
   {
     tag: 'Automation · n8n', title: 'Social Media Automation Suite',
     description: 'Sources trending content via Feedly and Tavily, transforms insights into structured posts, and auto-publishes ~1,000 targeted comments across Reddit, Twitter, and LinkedIn daily.',
-    fullDescription: 'A comprehensive social media automation system. Feedly and Tavily monitor industry feeds and identify trending pain points daily. The pipeline transforms insights into structured LinkedIn posts and targeted comment responses, then auto-publishes across Reddit, Twitter, and LinkedIn — delivering ~1,000 published comments and consistent post output, replacing hours of daily manual content work.',
+    fullDescription: 'A comprehensive social media automation system. Feedly and Tavily monitor industry feeds and identify trending pain points daily. The pipeline transforms insights into structured LinkedIn posts and targeted comment responses, then auto-publishes across Reddit, Twitter, and LinkedIn delivering ~1,000 published comments and consistent post output, replacing hours of daily manual content work.',
     tech: ['n8n', 'Feedly API', 'Tavily', 'LLM', 'LinkedIn API', 'Social Automation'], accent: '#7C3AED',
   },
 ]
 
 const EXPERIENCE = [
-  { role: 'Software Automation Engineer', company: 'Powermatch', date: 'Jan 2026 — Present', location: 'Lahore, Pakistan', desc: 'Built and maintain 30+ automation workflows across recruitment, sales, and HR. Designed an AI hiring signal system, a meeting note generator that transcribes and auto-publishes to the platform, and reporting pipelines — reducing agent tasks from hours to under 2 minutes.' },
+  { role: 'Software Automation Engineer', company: 'Powermatch', date: 'Jan 2026 — Present', location: 'Lahore, Pakistan', desc: 'Built and maintain 30+ automation workflows across recruitment, sales, and HR. Designed an AI hiring signal system, a meeting note generator that transcribes and auto-publishes to the platform, and reporting pipelines reducing agent tasks from hours to under 2 minutes.' },
   { role: 'AI Automation Engineer · Team Lead', company: 'IAU Capital', date: 'Sep 2025 — Present', location: 'UAE · Remote', desc: 'Lead a 3-person team delivering AI-powered systems for a UAE property and visa services firm. Built a fully automated CRM for visa processing with Telegram/WhatsApp integration, and an Emirates property ROI calculator replacing manual calculations.' },
   { role: 'AI Automation & LLM Application Specialist', company: 'TechnoWIS', date: 'Mar – Dec 2025', location: 'Lahore, Pakistan', desc: 'Delivered 20+ LLM automation workflows. Built a LinkedIn post generator and auto-comment system publishing ~1,000 targeted comments daily across Reddit, Twitter, and LinkedIn. Integrated Feedly for automated pain-point discovery and content sourcing.' },
-  { role: 'AI Associate Software Engineer', company: 'Crewlogix Technologies', date: 'Dec 2024 – Mar 2025', location: 'Lahore, Pakistan', desc: 'Built a YOLO-based computer vision pipeline across 6 camera feeds monitoring worker presence and hours in real time — demonstrated live at a conference. Developed the Adovvy voice AI module, deployed in production at MoltyFoam Pakistan.' },
+  { role: 'AI Associate Software Engineer', company: 'Crewlogix Technologies', date: 'Dec 2024 – Mar 2025', location: 'Lahore, Pakistan', desc: 'Built a YOLO-based computer vision pipeline across 6 camera feeds monitoring worker presence and hours in real time demonstrated live at a conference. Developed the Adovvy voice AI module, deployed in production at MoltyFoam Pakistan.' },
   { role: 'Backend Developer', company: 'TechnoWIS', date: 'Mar – Dec 2025', location: 'Lahore, Pakistan', desc: 'Built 15–20 backend APIs with NestJS and Django. Designed a Flowise-based lead discovery agent identifying 200+ qualified Shopify stores from Amazon listings per day, replacing hours of manual research.' },
 ]
 
@@ -598,7 +598,7 @@ export default function App() {
               AI systems<br />
               <span style={{ background: 'linear-gradient(135deg, #7C3AED, #06B6D4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>that ship.</span>
             </h1>
-            <p style={{ color: '#64748B', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '2rem', maxWidth: 420 }}>Backend Developer & AI Automation Engineer. I build LLM-powered workflows, RAG pipelines, and production REST APIs — and I deploy them. Based in Pakistan, working for global teams.</p>
+            <p style={{ color: '#64748B', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '2rem', maxWidth: 420 }}>Backend Developer & AI Automation Engineer. I build LLM-powered workflows, RAG pipelines, and production REST APIs and I deploy them. Based in Pakistan, working for global teams.</p>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: '2.5rem' }}>
               <button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} style={{ padding: '12px 24px', background: '#7C3AED', color: '#fff', borderRadius: 8, fontSize: 15, fontWeight: 600, border: 'none', boxShadow: '0 4px 20px rgba(124,58,237,0.5)', transition: 'all 0.2s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(124,58,237,0.6)' }}
@@ -689,8 +689,8 @@ export default function App() {
       <section id="about" style={{ padding: '100px 0' }}>
         <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 2rem', textAlign: 'center' }}>
           <SectionHeader title="A bit about me" />
-          <p style={{ color: '#64748B', fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '1.25rem' }}>I'm a Backend Developer and AI Automation Engineer based in Lahore, Pakistan. Over the past two years I've built 30+ automation systems — from n8n pipelines and LLM-powered workflows to production REST APIs — across four roles, including leading an automation team remotely for a UAE-based company.</p>
-          <p style={{ color: '#64748B', fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '2.5rem' }}>I'm expanding into cloud infrastructure and RAG-based AI applications, and looking for remote roles with UK and US companies where I can work on meaningful AI-powered products at a senior level.</p>
+          <p style={{ color: '#64748B', fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '1.25rem' }}>I'm a Backend Developer and AI Automation Engineer based in Lahore, Pakistan. Over the past two years I've built 30+ automation systems from n8n pipelines and LLM-powered workflows to production REST APIs across four roles, including leading an automation team remotely for a UAE-based company.</p>
+          {/* <p style={{ color: '#64748B', fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '2.5rem' }}></p> */}
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
             {[{ label: 'GitHub', url: 'https://github.com/BismaNwaz' }, { label: 'LinkedIn', url: 'https://linkedin.com/in/bisma-nawaz-6565711a1' }, { label: 'Email', url: 'mailto:bismanawaz043@gmail.com' }].map(({ label, url }) => (
               <a key={label} href={url} target={url.startsWith('mailto') ? undefined : '_blank'} rel="noopener noreferrer" style={{ padding: '10px 22px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 8, fontSize: 14, color: '#94A3B8', fontWeight: 500, transition: 'all 0.2s' }}
@@ -707,7 +707,7 @@ export default function App() {
         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 600, height: 300, borderRadius: '50%', background: 'rgba(124,58,237,0.06)', filter: 'blur(80px)', pointerEvents: 'none' }} />
         <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 2rem', textAlign: 'center', position: 'relative', zIndex: 1 }}>
           <h2 style={{ fontSize: 'clamp(2rem,5vw,3rem)', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: '1rem', color: '#F1F5F9' }}>Let's build something</h2>
-          <p style={{ color: '#64748B', fontSize: '1.05rem', lineHeight: 1.7, marginBottom: '2.5rem' }}>Open to remote AI Automation and LLM Engineering roles with UK and US companies. Drop me a line.</p>
+          {/* <p style={{ color: '#64748B', fontSize: '1.05rem', lineHeight: 1.7, marginBottom: '2.5rem' }}>Open to remote AI Automation and LLM Engineering roles with UK and US companies. Drop me a line.</p> */}
           <a href="mailto:bismanawaz043@gmail.com" style={{ display: 'inline-block', padding: '16px 36px', background: 'linear-gradient(135deg, #7C3AED, #5B21B6)', color: '#fff', borderRadius: 10, fontSize: 16, fontWeight: 600, boxShadow: '0 8px 32px rgba(124,58,237,0.5)', transition: 'all 0.3s' }}
             onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 14px 40px rgba(124,58,237,0.65)' }}
             onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 8px 32px rgba(124,58,237,0.5)' }}
